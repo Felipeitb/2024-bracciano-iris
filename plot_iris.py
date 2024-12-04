@@ -15,8 +15,8 @@ plt.figure(figsize=(12, 4))
 # Plot per i sepali
 plt.subplot(1, 2, 1)
 for i in range(3):
-    mask = (y == i)
-    plt.scatter(X[mask, 0], X[mask,1], label=iris.target_names[i])
+    mask = (y == i) # Y sono i risultari, y==i prendi tutti i valori della specie che correspondo il vetore y, mask: qualle valore per arrey Y, corrispondo a la specie 1,2,3 
+    plt.scatter(X[mask, 0], X[mask,1], label=iris.target_names[i]) #
 plt.xlabel('Lunghezza sepalo')
 plt.ylabel('Larghezza sepalo')
 plt.title('Distribuzione dei Sepali')
